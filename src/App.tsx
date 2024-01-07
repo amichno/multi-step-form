@@ -1,11 +1,14 @@
+import { useContext } from 'react';
 import './App.css';
-import { MultiFormStepProvider } from './Context/MultiFormContext';
+import MultiFormContex, {
+  MultiFormStepProvider,
+} from './Context/MultiFormContext';
 
 function App() {
-  //const { formValues } = useContext(MultiFormContex);
+  const { formValues } = useContext(MultiFormContex);
   return (
     <MultiFormStepProvider>
-      <div>Aloha !!</div>
+      <div>Aloha !!{formValues.name}</div>
     </MultiFormStepProvider>
   );
 }

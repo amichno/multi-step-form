@@ -36,9 +36,9 @@ export const MultiFormStepProvider = (props: any) => {
   };
 
   return (
-    <MultiFormStepProvider value={{ multiForm, setFormContext }}>
+    <MultiFormContex.Provider value={{ multiForm, setFormContext }}>
       {props.children}
-    </MultiFormStepProvider>
+    </MultiFormContex.Provider>
   );
 };
 export default MultiFormContex;
