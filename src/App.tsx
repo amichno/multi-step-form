@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import './App.css';
 import MultiFormContex, {
   MultiFormStepProvider,
-} from './Context/MultiFormContext';
+} from './context/multiForm.context';
 
 function App() {
   const { formValues } = useContext(MultiFormContex);

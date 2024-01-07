@@ -25,7 +25,7 @@ const emptyForm = {
 
 const MultiFormContex = React.createContext<IMultiFormContext>({
   formValues: emptyForm,
-  setFormsValues: () => {},
+  setFormsValues: () => null,
 });
 
 export const MultiFormStepProvider = (props: any) => {
