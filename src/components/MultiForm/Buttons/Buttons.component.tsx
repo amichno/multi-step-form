@@ -1,5 +1,16 @@
 import React from 'react';
 
-export default function Buttons() {
-  return <div>Buttons</div>;
+interface CustomButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
+  disabled: boolean;
+}
+
+export default function CustomButton<CustomButtonsProps>({
+  disabled,
+  ...props
+}) {
+  return (
+    <button {...props} disabled>
+      Buttons
+    </button>
+  );
 }

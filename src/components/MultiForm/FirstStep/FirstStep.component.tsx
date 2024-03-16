@@ -23,7 +23,7 @@ export default function FirstStep() {
           validate: (value) => value === 'test' || 'inne niż test',
         })}
       />
-      <ControlledInput></ControlledInput>
+      {/* <ControlledInput></ControlledInput> */}
     </div>
   );
 }
